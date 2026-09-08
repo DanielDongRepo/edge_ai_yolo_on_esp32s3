@@ -1,0 +1,6 @@
+description: BSP Display rotation example
+dependencies:
+  espressif/esp32-camera:
+    version: "==2.0.5"
+    public: true
+

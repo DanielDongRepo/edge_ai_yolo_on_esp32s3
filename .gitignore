@@ -1,0 +1,32 @@
+# Build output
+build/
+bootloader/
+sdkconfig
+sdkconfig.old
+
+# ESP-IDF managed components (auto-downloaded, restored via idf.py reconfigure)
+managed_components/
+dependencies.lock
+
+# Python configuration - contains sensitive network info
+config.ini
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Binary files
+*.bin
+*.elf
+*.map
+
+# Temporary files
+*.tmp
+*.log

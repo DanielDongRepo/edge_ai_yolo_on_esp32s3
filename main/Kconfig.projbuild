@@ -1,0 +1,26 @@
+menu "Project Configuration"
+    config WIFI_SSID
+        string "WiFi SSID"
+        default "YOUR_WIFI_SSID"
+        help
+            WiFi network name (SSID) for the ESP32 to connect to.
+
+    config WIFI_PASSWORD
+        string "WiFi Password"
+        default "YOUR_WIFI_PASSWORD"
+        help
+            WiFi network password.
+
+    config SERVER_IP
+        string "Server IP Address"
+        default "YOUR_SERVER_IP"
+        help
+            IP address of the PC/server that receives camera data via UDP.
+
+    config SERVER_PORT
+        int "Server UDP Port"
+        default 9090
+        range 1024 65535
+        help
+            UDP port number for camera data transmission.
+endmenu
